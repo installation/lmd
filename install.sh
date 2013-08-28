@@ -165,6 +165,7 @@ cleanup()
 	find * -not -name '*.log' | xargs rm -rf
 }
 
+
 # Adding dependencies
 case ${install[2]} in
 	dpkg )
