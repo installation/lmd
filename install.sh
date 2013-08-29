@@ -218,7 +218,6 @@ case ${install[2]} in
 esac
 
 install_deps
-install "gcc"
 
 
 if [ -f $DIR/maldetect-current.tar.gz ]; then
