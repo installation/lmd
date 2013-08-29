@@ -154,7 +154,7 @@ download()
 	local text="${2:-files}"
 	e "Downloading $text"
 	$download "$1" >> $INSTALL_LOG 2>> $ERROR_LOG || ee "Downloading $text failed"
-	e "Downloading $text successfull"
+	e "Downloading $text finished"
 	return 0
 }
 
@@ -189,7 +189,9 @@ else
 	download http://www.rfxn.com/downloads/maldetect-current.tar.gz "$NAME $VER files"
 fi
 
-tar -xfz maldetect-current.tar.gz >> $INSTALL_LOG 2>> $ERROR_LOG
+e "Installing $NAME $VER"
+
+tar -xzf maldetect-current.tar.gz >> $INSTALL_LOG 2>> $ERROR_LOG
 cd maldetect-*
 ./install.sh >> $INSTALL_LOG 2>> $ERROR_LOG || ee "Installing $NAME $VER failed"
 
