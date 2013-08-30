@@ -36,4 +36,8 @@ Clone this repository or download ````install.sh```` and download the following 
 Run ````install.sh````
 
 
-For further info check [Official website](http://www.rfxn.com/projects/linux-malware-detect/) or [Installation tutorial](http://www.tecmint.com/install-linux-malware-detect-lmd-in-rhel-centos-and-fedora/)
+For further info check [Official website](http://www.rfxn.com/projects/linux-malware-detect/)
+
+[README](http://www.rfxn.com/appdocs/README.maldetect)
+
+[Installation tutorial](http://www.tecmint.com/install-linux-malware-detect-lmd-in-rhel-centos-and-fedora/)
